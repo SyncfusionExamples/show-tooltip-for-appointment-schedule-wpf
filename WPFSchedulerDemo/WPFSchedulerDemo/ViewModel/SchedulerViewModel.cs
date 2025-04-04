@@ -1,6 +1,5 @@
-﻿namespace WpfScheduler
+﻿namespace WPFSchedulerDemo
 {
-    using System;
     using System.Windows.Media;
     using System.ComponentModel;
     using Syncfusion.UI.Xaml.Scheduler;

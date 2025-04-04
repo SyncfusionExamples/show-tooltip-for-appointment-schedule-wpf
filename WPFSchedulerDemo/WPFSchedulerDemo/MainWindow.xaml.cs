@@ -1,4 +1,4 @@
-﻿namespace WpfScheduler
+﻿namespace WPFSchedulerDemo
 {
     using System.Windows;
 

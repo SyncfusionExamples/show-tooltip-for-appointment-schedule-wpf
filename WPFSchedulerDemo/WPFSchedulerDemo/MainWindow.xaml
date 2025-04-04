@@ -1,60 +1,62 @@
-﻿<Window x:Class="WpfScheduler.MainWindow"
+﻿<Window x:Class="WPFSchedulerDemo.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:scheduler="http://schemas.syncfusion.com/wpf"
-        xmlns:local="clr-namespace:WpfScheduler"
-        WindowStartupLocation="CenterScreen" >
-
+        xmlns:local="clr-namespace:WPFSchedulerDemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Grid.DataContext>
             <local:SchedulerViewModel/>
         </Grid.DataContext>
 
         <scheduler:SfScheduler x:Name="scheduler"
-                           ItemsSource="{Binding Appointments}"
-                           EnableToolTip="True">
+                       ItemsSource="{Binding Appointments}"
+                       EnableToolTip="True">
             <scheduler:SfScheduler.ToolTipTemplate>
                 <DataTemplate>
                     <Border Background="Black"
-                        CornerRadius="4"
-                        Padding="5">
+                    CornerRadius="4"
+                    Padding="5">
                         <Grid>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="Auto" />
                                 <ColumnDefinition Width="*" />
                             </Grid.ColumnDefinitions>
                             <Rectangle Fill="{Binding AppointmentBackground}"
-                                   Grid.Column="0"
-                                   VerticalAlignment="Stretch"
-                                   HorizontalAlignment="Left"
-                                   Width="10"
-                                   Margin="0,0,5,0" />
+                               Grid.Column="0"
+                               VerticalAlignment="Stretch"
+                               HorizontalAlignment="Left"
+                               Width="10"
+                               Margin="0,0,5,0" />
                             <StackPanel Grid.Column="1"
-                                    Orientation="Vertical">
+                                Orientation="Vertical">
                                 <TextBlock Text="{Binding Subject}"
-                                       TextWrapping="Wrap"
-                                       FontWeight="Bold"
-                                       FontSize="12"
-                                       Foreground="White"
-                                       TextTrimming="CharacterEllipsis"
-                                       Margin="0,0,0,5" />
+                                   TextWrapping="Wrap"
+                                   FontWeight="Bold"
+                                   FontSize="12"
+                                   Foreground="White"
+                                   TextTrimming="CharacterEllipsis"
+                                   Margin="0,0,0,5" />
                                 <StackPanel Orientation="Horizontal">
                                     <TextBlock Text="Start Time: " Margin="0,0,2,0"
-                                           FontWeight="Bold"
-                                           FontSize="12"
-                                           Foreground="White" />
+                                       FontWeight="Bold"
+                                       FontSize="12"
+                                       Foreground="White" />
                                     <TextBlock Text="{Binding StartTime}"
-                                           FontSize="12"
-                                           Foreground="White" />
+                                       FontSize="12"
+                                       Foreground="White" />
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal">
                                     <TextBlock Text="End Time: " Margin="0,0,2,0"
-                                           FontWeight="Bold"
-                                           FontSize="12"
-                                           Foreground="White" />
+                                       FontWeight="Bold"
+                                       FontSize="12"
+                                       Foreground="White" />
                                     <TextBlock Text="{Binding EndTime}"
-                                           FontSize="12"
-                                           Foreground="White" />
+                                       FontSize="12"
+                                       Foreground="White" />
                                 </StackPanel>
                             </StackPanel>
                         </Grid>
