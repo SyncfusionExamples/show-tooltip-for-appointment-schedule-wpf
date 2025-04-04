@@ -13,8 +13,8 @@
         </Grid.DataContext>
 
         <scheduler:SfScheduler x:Name="scheduler"
-                       ItemsSource="{Binding Appointments}"
-                       EnableToolTip="True">
+                               ItemsSource="{Binding Appointments}"
+                               EnableToolTip="True">
             <scheduler:SfScheduler.ToolTipTemplate>
                 <DataTemplate>
                     <Border Background="Black"
@@ -26,37 +26,37 @@
                                 <ColumnDefinition Width="*" />
                             </Grid.ColumnDefinitions>
                             <Rectangle Fill="{Binding AppointmentBackground}"
-                               Grid.Column="0"
-                               VerticalAlignment="Stretch"
-                               HorizontalAlignment="Left"
-                               Width="10"
-                               Margin="0,0,5,0" />
+                                       Grid.Column="0"
+                                       VerticalAlignment="Stretch"
+                                       HorizontalAlignment="Left"
+                                       Width="10"
+                                       Margin="0,0,5,0" />
                             <StackPanel Grid.Column="1"
-                                Orientation="Vertical">
+                                        Orientation="Vertical">
                                 <TextBlock Text="{Binding Subject}"
-                                   TextWrapping="Wrap"
-                                   FontWeight="Bold"
-                                   FontSize="12"
-                                   Foreground="White"
-                                   TextTrimming="CharacterEllipsis"
-                                   Margin="0,0,0,5" />
+                                           TextWrapping="Wrap"
+                                           FontWeight="Bold"
+                                           FontSize="12"
+                                           Foreground="White"
+                                           TextTrimming="CharacterEllipsis"
+                                           Margin="0,0,0,5" />
                                 <StackPanel Orientation="Horizontal">
                                     <TextBlock Text="Start Time: " Margin="0,0,2,0"
-                                       FontWeight="Bold"
-                                       FontSize="12"
-                                       Foreground="White" />
+                                               FontWeight="Bold"
+                                               FontSize="12"
+                                               Foreground="White" />
                                     <TextBlock Text="{Binding StartTime}"
-                                       FontSize="12"
-                                       Foreground="White" />
+                                               FontSize="12"
+                                               Foreground="White" />
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal">
                                     <TextBlock Text="End Time: " Margin="0,0,2,0"
-                                       FontWeight="Bold"
-                                       FontSize="12"
-                                       Foreground="White" />
+                                               FontWeight="Bold"
+                                               FontSize="12"
+                                               Foreground="White" />
                                     <TextBlock Text="{Binding EndTime}"
-                                       FontSize="12"
-                                       Foreground="White" />
+                                               FontSize="12"
+                                               Foreground="White" />
                                 </StackPanel>
                             </StackPanel>
                         </Grid>
