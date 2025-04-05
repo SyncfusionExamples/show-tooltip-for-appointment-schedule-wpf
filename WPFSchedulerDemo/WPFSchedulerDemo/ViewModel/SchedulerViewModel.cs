@@ -5,6 +5,9 @@
     using Syncfusion.UI.Xaml.Scheduler;
     using System.Collections.ObjectModel;
 
+    /// <summary>
+    /// Represents the ViewModel for scheduling operations and bindings.
+    /// </summary>
     public class SchedulerViewModel
     {
         #region Fields

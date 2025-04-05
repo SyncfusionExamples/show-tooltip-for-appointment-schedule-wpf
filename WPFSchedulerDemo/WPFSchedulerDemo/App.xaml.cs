@@ -1,9 +1,9 @@
-﻿using System.Configuration;
-using System.Data;
-using System.Windows;
-
-namespace WPFSchedulerDemo
+﻿namespace WPFSchedulerDemo
 {
+    using System.Configuration;
+    using System.Data;
+    using System.Windows;
+
     /// <summary>
     /// Interaction logic for App.xaml
     /// </summary>
