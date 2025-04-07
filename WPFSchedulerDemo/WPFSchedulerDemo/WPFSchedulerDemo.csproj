@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <PackageReference Include="Syncfusion.SfScheduler.WPF" Version="*" />
+    <PackageReference Include="Syncfusion.SfSkinManager.WPF" Version="*" />
+    <PackageReference Include="Syncfusion.Themes.MaterialLight.WPF" Version="*" />
   </ItemGroup>
-
 </Project>

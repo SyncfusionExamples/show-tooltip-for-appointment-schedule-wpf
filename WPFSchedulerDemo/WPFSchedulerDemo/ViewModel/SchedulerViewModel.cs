@@ -6,7 +6,7 @@
     using System.Collections.ObjectModel;
 
     /// <summary>
-    /// Represents the ViewModel for scheduling operations and bindings.
+    /// Represents the ViewModel for scheduling appointment operations and bindings.
     /// </summary>
     public class SchedulerViewModel
     {
@@ -40,11 +40,11 @@
         {
             get
             {
-                return appointments;
+                return this.appointments;
             }
             set
             {
-                appointments = value;
+                this.appointments = value;
                 this.RaisePropertyChanged("Appointments");
             }
         }

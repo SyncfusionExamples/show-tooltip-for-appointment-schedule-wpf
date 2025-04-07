@@ -1,6 +1,7 @@
 ﻿namespace WPFSchedulerDemo
 {
     using System.Windows;
+    using Syncfusion.SfSkinManager;
 
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -10,6 +11,9 @@
         public MainWindow()
         {
             InitializeComponent();
+
+            //Applying meterial light theme initially. 
+            SfSkinManager.SetTheme(this, new Theme("MaterialLight"));
         }
     }
 }
