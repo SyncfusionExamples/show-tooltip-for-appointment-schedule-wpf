@@ -11,8 +11,6 @@
         public MainWindow()
         {
             InitializeComponent();
-
-            //Applying meterial3 light theme initially. 
             SfSkinManager.SetTheme(this, new Theme("Material3Light"));
         }
     }
