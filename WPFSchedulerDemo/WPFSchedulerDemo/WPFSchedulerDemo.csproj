@@ -11,6 +11,6 @@
   <ItemGroup>
     <PackageReference Include="Syncfusion.SfScheduler.WPF" Version="*" />
     <PackageReference Include="Syncfusion.SfSkinManager.WPF" Version="*" />
-    <PackageReference Include="Syncfusion.Themes.MaterialLight.WPF" Version="*" />
+    <PackageReference Include="Syncfusion.Themes.Material3Light.WPF" Version="*" />
   </ItemGroup>
 </Project>

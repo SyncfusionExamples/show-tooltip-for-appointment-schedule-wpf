@@ -22,7 +22,7 @@
         #region Constructor
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="SchdulerViewModel" /> class.
+        /// Initializes a new instance of the <see cref="SchdulerViewModel"/> class.
         /// </summary>
         public SchedulerViewModel()
         {
@@ -210,7 +210,7 @@
         }
 
         /// <summary>
-        /// Raises the PropertyChanged event.
+        /// Raises the property changed event.
         /// </summary>
         /// <param name="propertyName">The name of the property that changed.</param>
         /// <param name="oldValue">The old value of the property.</param>
