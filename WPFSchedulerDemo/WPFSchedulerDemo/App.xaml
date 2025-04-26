@@ -1,9 +1,9 @@
-﻿<Application x:Class="WpfScheduler.App"
+﻿<Application x:Class="WPFSchedulerDemo.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:WpfScheduler"
+             xmlns:local="clr-namespace:WPFSchedulerDemo"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+
     </Application.Resources>
 </Application>
