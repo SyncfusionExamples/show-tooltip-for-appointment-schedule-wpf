@@ -17,9 +17,7 @@
                                EnableToolTip="True">
             <scheduler:SfScheduler.ToolTipTemplate>
                 <DataTemplate>
-                    <Border Background="Black"
-                    CornerRadius="4"
-                    Padding="5">
+                    <Border CornerRadius="4">
                         <Grid>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="Auto" />
@@ -35,14 +33,14 @@
                                         Orientation="Vertical">
                                 <TextBlock Text="{Binding Subject}"
                                            TextWrapping="Wrap"
-                                           FontWeight="Bold"
+                                           FontWeight="Medium"
                                            FontSize="12"
                                            Foreground="White"
                                            TextTrimming="CharacterEllipsis"
                                            Margin="0,0,0,5" />
                                 <StackPanel Orientation="Horizontal">
                                     <TextBlock Text="Start Time: " Margin="0,0,2,0"
-                                               FontWeight="Bold"
+                                               FontWeight="Medium"
                                                FontSize="12"
                                                Foreground="White" />
                                     <TextBlock Text="{Binding StartTime}"
@@ -51,7 +49,7 @@
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal">
                                     <TextBlock Text="End Time: " Margin="0,0,2,0"
-                                               FontWeight="Bold"
+                                               FontWeight="Medium"
                                                FontSize="12"
                                                Foreground="White" />
                                     <TextBlock Text="{Binding EndTime}"

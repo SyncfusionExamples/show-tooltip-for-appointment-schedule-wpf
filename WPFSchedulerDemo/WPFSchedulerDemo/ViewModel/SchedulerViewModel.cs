@@ -2,8 +2,8 @@
 {
     using System.Windows.Media;
     using System.ComponentModel;
-    using Syncfusion.UI.Xaml.Scheduler;
     using System.Collections.ObjectModel;
+    using Syncfusion.UI.Xaml.Scheduler;
 
     /// <summary>
     /// Represents the ViewModel for scheduling appointment operations and bindings.
@@ -141,10 +141,10 @@
 
                 appointments.Add(appointment);
             }
+
             int j = 0;
             int k = 0;
             int l = 0;
-
             while (j < YearlyOccurranceSubjects.Count)
             {
                 DateTime date = NonWorkingDays[ran.Next(0, NonWorkingDays.Count)];
@@ -195,7 +195,7 @@
         /// Method to get foreground color based on background.
         /// </summary>
         /// <param name="backgroundColor">The background color.</param>
-        /// <returns>The background color.</returns>
+        /// <returns>The foreground color.</returns>
         private Brush GetAppointmentForeground(Brush backgroundColor)
         {
             var brush = backgroundColor as SolidColorBrush;
